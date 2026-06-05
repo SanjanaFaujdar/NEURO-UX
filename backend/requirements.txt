@@ -10,3 +10,5 @@ pymongo==4.6.0
 python-dotenv==1.0.0
 
 numpy
+
+scikit-learn
