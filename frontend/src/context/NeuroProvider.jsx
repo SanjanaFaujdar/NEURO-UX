@@ -40,7 +40,7 @@ export function NeuroProvider({ children }) {
     setSessionId(sid);
 
     // Connect to backend
-    const socketInstance = io("http://localhost:8000", {
+    const socketInstance = io(import.meta.env.VITE_BACKEND_URL || "http://localhost:8000", {
       reconnection: true,
       reconnectionDelay: 1000,
       reconnectionDelayMax: 5000,
